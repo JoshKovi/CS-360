@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="EditTextBackgroundColor">#E7E4E4</color>
+    <color name="lightBlack">#333</color>
+    <color name="Signup_Yellow">#fcf803</color>
+    <color name="Login_Green">#32e317</color>
+    <color name="Main_toolbar">#e8eb65</color>
+    <color name="offwhite">#f7f6e9</color>
+    <color name="black">#FF000000</color>
+    <color name="invalid_red">#F64242</color>
+    <color name="offwhite_dark">#A19F83</color>
+
+</resources>

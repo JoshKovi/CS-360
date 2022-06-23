@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/offwhite"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        style="@style/message_text"
+        >
+
+        <TextView
+            android:id="@+id/item_header"
+            style="@style/item_values"
+            android:layout_width="160dp"
+            android:paddingHorizontal="0dp"
+            android:layout_marginHorizontal="5dp"
+            />
+        <TextView
+            android:id="@+id/qtyView"
+            style="@style/item_values"
+            android:layout_width="60dp"
+            android:paddingHorizontal="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:visibility="visible"/>
+        <EditText
+            android:id="@+id/qtyChange"
+            style="@style/item_values"
+            android:background="@drawable/outlined_edit_text"
+            android:layout_width="80dp"
+            android:paddingHorizontal="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/login_button"
+            android:text="@string/change"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:onClick="changeQty"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stkNumberView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/partNumberView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/locationView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/UOIView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

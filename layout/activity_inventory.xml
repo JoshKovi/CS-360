@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Remove"
+    android:orientation="vertical"
+    android:background="@color/offwhite"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/standard_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "0.12"
+        android:background="@color/Main_toolbar"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            >
+
+            <ImageButton
+                style="@style/toolbar_buttons"
+                android:src="@drawable/inventory_foreground"
+                />
+            <ImageButton
+                style="@style/toolbar_buttons"
+                android:src="@drawable/order_foreground"
+                />
+            <ImageButton
+                style="@style/toolbar_buttons"
+                android:src="@drawable/add_remove_foreground"
+                android:onClick="addRemoveClicked"
+                />
+            <ImageButton
+                style="@style/toolbar_buttons"
+                android:src="@drawable/log_foreground"
+                />
+            <ImageButton
+                style="@style/toolbar_buttons"
+                android:src="@drawable/message_foreground"
+                android:onClick="messageClicked"
+                />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/item_name"
+            android:background="@drawable/message_outline"
+            android:paddingVertical="0dp"
+            android:text="Item Name      "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/item_name"
+            android:background="@drawable/message_outline"
+            android:paddingVertical="0dp"
+            android:text="Qty  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/item_name"
+            android:background="@drawable/message_outline"
+            android:paddingVertical="0dp"
+            android:text="Change"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/item_name"
+            android:background="@drawable/message_outline"
+            android:paddingVertical="0dp"
+            android:text="+ / -"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inventoryRecyclerChange"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.78">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

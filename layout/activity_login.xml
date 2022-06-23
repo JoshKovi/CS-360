@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/offwhite"
+    tools:context=".Login"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "0.12"
+        android:background="@color/Main_toolbar"
+        >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".88"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+
+            <EditText
+                android:id="@+id/userNameEntry"
+                style="@style/login_edit_text"
+                android:hint="@string/userEntry"
+                />
+            <EditText
+                android:id="@+id/passwordEntry"
+                android:inputType="textPassword"
+                style="@style/login_edit_text"
+                android:hint="@string/passEntry"
+                />
+            <EditText
+                android:id="@+id/employeeNameEntry"
+                style="@style/login_edit_text"
+                android:hint="@string/nameEntry"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/orgEntry"
+                style="@style/login_edit_text"
+                android:hint="@string/orgEntry"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/supervisorNameEntry"
+                style="@style/login_edit_text"
+                android:hint="@string/superNameEntry"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/locationEntry"
+                style="@style/login_edit_text"
+                android:hint="@string/locEntry"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/login_button"
+                    style="@style/button_basic"
+                    android:background="@drawable/login_button"
+                    android:text="@string/login_Button"
+                    android:onClick="loginClicked"
+                    />
+                <Button
+                    android:id="@+id/signUp"
+                    style="@style/button_basic"
+                    android:background="@drawable/signup_button"
+                    android:text="@string/create_Button"
+                    android:onClick="createClicked"
+                    />
+
+
+            </LinearLayout>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

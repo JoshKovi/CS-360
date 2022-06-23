@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project3_Option1_Kovacevich</string>
+    <string name="userEntry">Username:</string>
+    <string name="passEntry">Password:</string>
+    <string name="nameEntry">Employee Name:</string>
+    <string name="orgEntry">Organization:</string>
+    <string name="superNameEntry">Supervisor Name:</string>
+    <string name="locEntry">Location:</string>
+    <string name="login_Button">Login</string>
+    <string name="create_Button">Create</string>
+    <string name="signup_Button">Sign Up</string>
+    <string name="channel_name">Inventory Message</string>
+    <string name="channel_description">Get Notifications when messages arrive in inventory app.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="change">Go</string>
+</resources>

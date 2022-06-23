@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/offwhite"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        style="@style/message_text"
+        >
+
+        <TextView
+            android:id="@+id/item_header"
+            android:layout_weight=".70"
+            style="@style/item_name"
+            android:maxWidth="220dp"
+            android:minWidth="220dp"
+            />
+        <Button
+            android:id="@+id/delete_item"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".30"
+            android:minWidth="80dp"
+            android:maxWidth="80dp"
+            android:background="@drawable/signup_button"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:onClick="verifyDelete"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/stkNumberView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/partNumberView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/locationView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/UOIView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/qtyView"
+        style="@style/item_values"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_draw">
+
+    <TextView
+        android:id="@+id/item_headerPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/stkNumberPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/partNumberPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/locationPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/UOIPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/qtyPop"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/qtyToChange"
+        android:singleLine="false"
+        style="@style/item_name"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingVertical="20dp"
+
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_button"
+            android:text="@string/change"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:onClick="change"
+            android:layout_marginHorizontal="10dp"
+            />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_button"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:onClick="cancel"
+            android:layout_marginHorizontal="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
